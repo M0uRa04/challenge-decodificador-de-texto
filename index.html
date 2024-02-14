@@ -7,11 +7,47 @@
     <title>Decodificador de Texto</title>
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
   </head>
   <body>
-    <h1>Hellow Word</h1>
+    <header class="header__container">
+      <img
+        src="./assets/img/Logo.svg"
+        alt="Logo da Alura"
+        class="header__container__img"
+      />
+    </header>
+    <main class="container__content">
+      <section class="container__content__primary__section">
+        <h1 class="input__primary__content__text">Digite seu texto</h1>
 
+        <div class="container__primary__content__info">
+          <img
+            src="./assets/img/bi_exclamation-circle-fill.svg"
+            alt="Ícone de conteúdo informativo"
+          />
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
 
+        <section class="primary__content__container__btns">
+          <div class="btn" id="btn__decript">Criptografar</div>
+          <div class="btn" id="btn__encript">Descriptografar</div>
+        </section>
+      </section>
+
+      <section class="containar__content__secondary__section">
+        <div class="content__secondary__decripted">
+          <p>Nenhuma Mensagem encontrada</p>
+          <div class="content__secondary__copy__button">Copiar</div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer__container">
+      <p class="footer__container__developed">Desenvolvido por Robson Moura</p>
+    </footer>
 
     <script src="./assets/js/main.js"></script>
   </body>
