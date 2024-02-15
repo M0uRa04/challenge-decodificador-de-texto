@@ -140,3 +140,16 @@
 #secondary__content__copy__btn {
     width: 279px;
 }
+
+.footer__container {
+    width: 100%;
+    margin: 20% 0 0 0;
+    padding: 5%;
+    background-color: var(--primary-color);
+}
+
+.footer__container__developed {
+    font-family: var(--primary-font);
+    color: var(--background-color);
+    text-align: center;
+}
