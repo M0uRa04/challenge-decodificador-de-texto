@@ -107,4 +107,36 @@
   background-color: #ccdff5;
 }
 
+.containar__content__secondary__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    background-color: white;
+    border-radius: 32px;
+    filter: drop-shadow(6px 10px 30px rgba(0,0,0,0.2)); 
+}
 
+.content__secondary__decripted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 5% 8%;
+}
+
+.content__secondary__text {
+    font-family: var(--primary-font);
+    color: var(--fourth-color);
+}
+
+.content__secondary__text span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#secondary__content__copy__btn {
+    width: 279px;
+}
