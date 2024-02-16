@@ -1,0 +1,48 @@
+@media screen and (min-width : 768px) {
+    .primary__content__container__btns {
+        flex-direction: row;   
+    }
+
+    .input__primary__content__text {
+        min-height: 548px;
+    }
+}
+
+@media screen and (min-width : 1440px) {
+    .header__container__img {
+        padding: 7% 0% 0% 2%;
+      }
+
+    .container__content {
+        flex-direction: row;
+        gap: 80px;
+        max-width: 100%;
+    }
+    .container__content__primary__section {
+        width: 50%;
+    }
+
+    .primary__content__container__btns {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .container__content__secondary__section {
+        width: 30%;
+        height: 100vh;
+        
+    }
+
+    .content__secondary__decripted__img {
+        display: flex;
+    }
+
+    #secondary__content__copy__btn {
+        margin-top: 20px;
+    }
+
+    .footer__container {
+        margin: 8% 0 0 0;
+        padding : 2%;
+    }
+}
