@@ -58,6 +58,7 @@
   font-weight: 400;
   font-size: 2rem;
   color: var(--primary-color);
+  text-transform: lowercase;
 }
 
 textarea:focus {
@@ -131,7 +132,7 @@ textarea:focus {
 .container__content__secondary__section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     width: 90%;
@@ -139,6 +140,7 @@ textarea:focus {
     background-color: white;
     border-radius: 32px;
     filter: drop-shadow(6px 10px 30px rgba(0,0,0,0.2)); 
+    padding: 15px;
 }
 
 .content__secondary__decripted {
@@ -148,6 +150,12 @@ textarea:focus {
     gap: 20px;
     padding: 5% 8%;
     max-width: 100%;
+}
+
+#transformed_text{
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
 }
 
 .content__secondary__text {

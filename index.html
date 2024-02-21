@@ -7,14 +7,13 @@
     <title>Decodificador de Texto</title>
 
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/mediaQuery.css">
+    <link rel="stylesheet" href="./assets/css/mediaQuery.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
   </head>
   <body>
-
     <header class="header__container">
       <img
         src="./assets/img/Logo.svg"
@@ -25,18 +24,26 @@
 
     <main class="container__content">
       <section class="container__content__primary__section">
-
         <form class="container__content__input__container">
-         <textarea spellcheck="none" class="textarea__primary__content" name="user_text" id="user_text" cols="50" rows="10" placeholder="Digite seu texto aqui"></textarea>
+          <textarea
+            spellcheck="none"
+            class="textarea__primary__content"
+            name="user_text"
+            id="user_text"
+            cols="50"
+            rows="10"
+            placeholder="Digite seu texto aqui"
+          ></textarea>
         </form>
-        
 
         <div class="container__primary__content__info">
           <img
             src="./assets/img/bi_exclamation-circle-fill.svg"
             alt="Ícone de conteúdo informativo"
           />
-          <p class="primary__content__text__info">Apenas letras minúsculas e sem acento.</p>
+          <p class="primary__content__text__info">
+            Apenas letras minúsculas e sem acento.
+          </p>
         </div>
 
         <section class="primary__content__container__btns">
@@ -44,31 +51,40 @@
             <p class="primary__content__btn__text">Criptografar</p>
           </div>
           <div class="primary__content__btn" id="btn__decript">
-            <p class="primary__content__btn__text">Descriptografar</p> 
+            <p class="primary__content__btn__text">Descriptografar</p>
           </div>
         </section>
-
       </section>
 
-      <section  class="container__content__secondary__section">
-
+      <section class="container__content__secondary__section">
+        <textarea
+            spellcheck="none"
+            class="textarea__primary__content"
+            name="transformed_text"
+            id="transformed_text"
+            cols="30"
+            rows="20"
+            placeholder="Digite seu texto aqui"
+          ></textarea>
         <div class="content__secondary__decripted">
-          <img class="content__secondary__decripted__img" src="./assets/img/menino-com-uma-lupa-desenho.svg" alt="Desenho de um menino procurando a mensgem com uma lupa">
+          <img
+            class="content__secondary__decripted__img"
+            src="./assets/img/menino-com-uma-lupa-desenho.svg"
+            alt="Desenho de um menino procurando a mensgem com uma lupa"
+          />
           <p class="content__secondary__text">
-            <span>Nenhuma mensagem encontrada</span><br><br>
-            Digite um texto que você deseja criptografar ou descriptografar.</p>
-          <div class="primary__content__btn" id="secondary__content__copy__btn">
-            <p class="primary__content__btn__text">Copiar</p>
-          </div>
+            <span>Nenhuma mensagem encontrada</span><br /><br />
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
         </div>
-
+        <div class="primary__content__btn" id="secondary__content__copy__btn">
+          <p class="primary__content__btn__text">Copiar</p>
+        </div>
       </section>
-
     </main>
 
     <footer class="footer__container">
       <p class="footer__container__developed">Desenvolvido por Robson Moura</p>
-
     </footer>
 
     <script src="./assets/js/main.js"></script>
