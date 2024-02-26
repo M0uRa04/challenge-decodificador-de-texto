@@ -8,6 +8,17 @@ let textAreaCharacterArray = [];
 let baseEncriptAndDecriptChar = ['a', 'e', 'i', 'o', 'u'];
 let baseEncriptAndDecriptWord = ['ai', 'enter', 'imes', 'ober', 'ufat']
 
+function hasEspecialCharacteres(input) {
+    let regex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?ÀÁÂÃÄÅàáâãäåÈÉÊËèéêëÌÍÎÏìíîïÒÓÔÕÖØòóôõöøÙÚÛÜùúûü]/;
+    let has =  regex.test(input);
+    if (has) {
+        alert('Desculpe, não é possível inserir caracteres especiais ou letras com acento.')
+        return true
+    } else {
+        return false
+    }
+}
+
 function isTextAreaEmpty(textArea) {
     let text = document.querySelector(textArea);
     let textValue = text.value;
@@ -59,7 +70,7 @@ function decript(text) {
 
 
 btnCriptografar.addEventListener('click', function () {
-    if (!isTextAreaEmpty('#user_text')) {
+    if ((!isTextAreaEmpty('#user_text')) && (!hasEspecialCharacteres(getTextOfTextArea('#user_text')))) {
         let encripitedText = encripit(getTextOfTextArea('#user_text'));
         secondaryContainer.style.display = "none";
         transformedText.style.display = "flex";
