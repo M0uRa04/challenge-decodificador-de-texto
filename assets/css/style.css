@@ -50,6 +50,7 @@
 }
 
 .textarea__primary__content{
+  resize: none  ;
   box-sizing: border-box;
   inline-size: min-content;
   overflow-wrap: break-word;
@@ -177,6 +178,10 @@ textarea:focus {
 #secondary__content__copy__btn {
     width: 279px;
     display: none;
+}
+
+#secondary__content__copy__btn:hover {
+  background-color: #ccdff5;
 }
 
 .footer__container {
