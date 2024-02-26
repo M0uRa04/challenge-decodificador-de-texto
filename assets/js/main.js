@@ -9,7 +9,7 @@ let baseEncriptAndDecriptChar = ['a', 'e', 'i', 'o', 'u'];
 let baseEncriptAndDecriptWord = ['ai', 'enter', 'imes', 'ober', 'ufat']
 
 function hasEspecialCharacteres(input) {
-    let regex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?ÀÁÂÃÄÅàáâãäåÈÉÊËèéêëÌÍÎÏìíîïÒÓÔÕÖØòóôõöøÙÚÛÜùúûü]/;
+    let regex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?ÀÁÂÃÄÅàáâãäåÈÉÊËèéêëÌÍÎÏìíîïÒÓÔÕÖØòóôõöøÙÚÛÜùúûü´]/;
     let has =  regex.test(input);
     if (has) {
         alert('Desculpe, não é possível inserir caracteres especiais ou letras com acento.')
